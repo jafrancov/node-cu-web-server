@@ -63,6 +63,12 @@ app.get('/about/', (req, res) => {
     });
 });
 
+app.get('/projects/', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects portfolio',
+    });
+});
+
 app.get('/bad/', (req, res) => {
     res.send({
         errorMessage: 'Oops! some error happened'
